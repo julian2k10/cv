@@ -1,16 +1,8 @@
 body{
-  padding: 0;
-  margin: 0 auto;
+  text-align: center;
   background-color: #393e46;
   font-family: 'Montserrat', sans-serif;
   color: white;
-}
-
-hr{
-  border: none;
-  border-top: 4px dotted;
-  border-color: gray;
-  width: 5%;
 }
 
 .banner{
@@ -21,7 +13,17 @@ hr{
 
 .banner-text{
   position: absolute;
-  left: 12rem;
+  left: 11rem;
+  top: 5px;
+}
+
+.blockquote{
+  font-size: 1.4em;
+}
+
+.center{
+  padding: 0;
+  margin: 0 auto;
 }
 
 .banner-img{
@@ -39,22 +41,39 @@ hr{
 
 .feature-item:hover{
   cursor: pointer;
-  background-color: #222831;
+  color: black;
 }
 
 .feature-item img{
   max-width: 3rem;
   max-height: 3rem;
+  margin: 1rem;
+  transform: rotate(30deg);
+}
+
+.feature-item img:hover{
+  transform: rotate(0deg);
 }
 
 .footer{
-  height: 12rem;
+  padding: 0.5rem;
+  max-height: 11rem;
   background-color: #00adb5;
 }
 
 .footer-img{
-  max-height: 5rem;
-  max-width: 5rem;
+  padding: 0;
+  margin: 0.1rem;
+  max-height: 2.5rem;
+  max-width: 3rem;
+  border-radius: 20%;
+}
+
+.footer-img:hover{
+  cursor: pointer;
+  border-color: #00adb5;
+  border-style: solid;
+  border-width: medium;
 }
 
 .handwriting{
@@ -63,9 +82,14 @@ hr{
   font-size: 4rem;
 }
 
-.header{
+hr{
   padding: 0;
   margin: 0 auto;
+  margin-top: 1rem;
+  border: none;
+  border-top: 4px dotted;
+  border-color: gray;
+  width: 5%;
 }
 
 #intro-text
@@ -74,26 +98,31 @@ hr{
   font-size: 1.3rem;
 }
 
-.main{
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
+.job-description{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+nav{
+  position: relative;
+  display: inline-block;
+  min-width: 15rem;
+  height: 100rem;
 }
 
 .nav-bar{
   background-color: #222831;
   text-align: center;
+  height: 50rem;
+  position: fixed;
+  padding-top: 1rem;
+  min-width: 15rem;
 }
 
 .profile-img{
   height: 200px;
   width: 200px;
   border-radius: 100%;
-}
-
-.proficiency{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .quote-start{
@@ -114,15 +143,6 @@ hr{
   display: inline-block;
 }
 
-.skills{
-  padding: 0;
-  margin: 0 auto;
-}
-
-.skill-level img{
-  max-height: 10rem;
-}
-
 .skill-key img{
   max-height: 25rem;
   max-width: 35rem;
@@ -130,4 +150,9 @@ hr{
 
 .star{
   color: gold;
+}
+
+.work-date{
+  color: gray;
+  font-size: 1rem;
 }
