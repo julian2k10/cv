@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Julian's Personal Site</title>
+  <title>Julian's Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/Style.css">
+  <link rel="icon" href="img/businessman.png">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Catamaran|Merriweather|Montserrat|Pacifico|Passion+One|Sacramento&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -16,7 +17,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".nav-bar" data-offset="50">
   <div class="center container-fluid row">
     <nav class="center col-3">
       <aside class="nav-bar center col-3">
@@ -25,49 +26,49 @@
         <h6>Software Engineer, Keiser University</h6>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#section1" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Skills</a>
+            <a href="#section2" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Work Experience</a>
+            <a href="#section3" class="nav-link">Work Experience</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#section4" class="nav-link">Contact</a>
           </li>
         </ul>
       </aside>
     </nav>
 
     <section class="center col-9">
-      <div class="banner">
+      <div id="section1" class="banner">
         <h1 class="banner-text">Where Dreams Become a Reality!</h1>
         <img class="banner-img" src="img/banner_new.png" alt="Banner Image of technology">
       </div>
       <div id="about">
         <h1 class="handwriting">I'm Julian</h1>
-        <p id="intro-text" class="text-left pl-4 pr-4">
+        <p class="text-left pl-4 pr-4">
           I am a software engineer undergraduate student at keiser university. while I am
           a proficient full-stack developer, my expertise is in building applications
           that solve real world problems.
         </p>
       </div>
-      <h2>Skills</h2>
+      <h2 id="section2">Skills</h2>
       <div class="container-fluid row pb-3 center">
-        <div class="feature-item col-lg-3">
+        <div class="feature-item col-lg-3" onclick="webDev()">
           <img src="img/programming.png" alt="Web development image" class="feature-image">
           <h6>Web Development</h6>
         </div>
-        <div class="feature-item col-lg-3">
+        <div class="feature-item col-lg-3" onclick="softwareDev()">
           <img src="img/software.png" alt="Software development image" class="feature-image">
           <h6>Software Development</h6>
         </div>
-        <div class="feature-item col-lg-3">
+        <div class="feature-item col-lg-3" onclick="mobileDev()">
           <img src="img/mobile.png" alt="Mobile development image" class="feature-image">
           <h6>Mobile Development</h6>
         </div>
-        <div class="feature-item col-lg-3">
+        <div class="feature-item col-lg-3" onclick="machineLearning()">
           <img src="img/machine_learning.png" alt="Machine learning image" class="feature-image">
           <h6>Machine Learning</h6>
         </div>
@@ -149,7 +150,7 @@
         </div>
       </div>
 
-      <h2 class="pt-2 pb-1">Work Experience</h2>
+      <h2 id="section3" class="pt-2 pb-1">Work Experience</h2>
       <div id="work-carousel" class="carousel slide" data-ride="carousel" data-pause="hover">
         <div class="carousel-inner col-7 center text-left">
           <div class="carousel-item slider-item">
@@ -212,7 +213,7 @@
         </div>
       </blockquote>
 
-      <section class="footer col-12 center">
+      <section id="section4" class="footer col-12 center">
         <h3 class="col-6 text-left">LIKE WHAT YOU SEE?</h3>
         <h5 class="col-6 text-left">Get in touch with me...</h5>
         <div class="footer-icons col-6 text-left">
@@ -225,10 +226,9 @@
         <h6 class="col-12 text-right">Copyright © 2019. All Rights Reserved</h6>
       </section>
     </section>
-
-
   </div>
 
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

@@ -83,19 +83,10 @@ body{
 }
 
 hr{
-  padding: 0;
-  margin: 0 auto;
-  margin-top: 1rem;
   border: none;
   border-top: 4px dotted;
   border-color: gray;
   width: 5%;
-}
-
-#intro-text
-{
-  font-family: 'Catamaran', sans-serif;
-  font-size: 1.3rem;
 }
 
 .job-description{
@@ -117,6 +108,11 @@ nav{
   position: fixed;
   padding-top: 1rem;
   min-width: 15rem;
+}
+
+p{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.3rem;
 }
 
 .profile-img{
@@ -146,6 +142,10 @@ nav{
 .skill-key img{
   max-height: 25rem;
   max-width: 35rem;
+}
+
+.slider-item{
+  height: 12rem;
 }
 
 .star{
